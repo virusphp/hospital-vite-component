@@ -1,0 +1,1 @@
+<img src="{{ $icon }}" {{ $attributes->merge(['class' => 'mx-auto w-20 fill-current text-gray-500']) }}>
