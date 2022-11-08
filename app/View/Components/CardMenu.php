@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class CardMenu extends Component
 {
+    public $link;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($link)
     {
-        //
+        $this->link = $link;
     }
 
     /**

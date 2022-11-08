@@ -7,13 +7,13 @@
 
     <div class="container grid lg:grid-cols-6 lg:gap-3 mx-auto px-8">
         {{-- can use dinamic with database --}}
-        <x-card-menu>
+        <x-card-menu link="{{ route('dashboard') }}">
             <x-slot name="logo">
                 <x-logo-menu icon="{{ asset('images/icon-menu/logo.png') }}" />
             </x-slot>
             {{ __('SUB UNIT') }}
         </x-card-menu>
-        <x-card-menu>
+        <x-card-menu link="{{ route('dashboard') }}">
             <x-slot name="logo">
                 <x-logo-menu icon="{{ asset('images/icon-menu/pasien.png') }}" />
             </x-slot>
