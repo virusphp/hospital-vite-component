@@ -48,7 +48,7 @@
 							{{ $unit->keterangan }}
 						</td>
 						<td class="py-4 px-6">
-							{{ $unit->enabled }}
+							{!! statusAKtif($unit->enabled) !!}
 						</td>
 						<td class="py-4 px-6 text-right">
 							<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
