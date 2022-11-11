@@ -11,4 +11,10 @@ class Subunit extends Model
 
     protected $table = 'sub_unit';
     protected $primaryKey = 'kd_sub_unit';
+
+
+    public function scopePoliklinik($query)
+    {
+        return $query->where('kd_unit', '=', 1);
+    }
 }
