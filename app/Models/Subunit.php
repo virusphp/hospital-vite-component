@@ -17,4 +17,9 @@ class Subunit extends Model
     {
         return $query->where('kd_unit', '=', 1);
     }
+
+    public function scopeRuangan($query)
+    {
+        return $query->where('kd_unit', '=', 2);
+    }
 }

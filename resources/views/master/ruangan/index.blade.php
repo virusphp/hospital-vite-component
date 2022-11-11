@@ -18,10 +18,10 @@
 				<thead class="text-xs text-slate-800 uppercase bg-gray-50 dark:bg-slate-800 dark:text-slate-400">
 					<tr>
 						<th scope="col" class="py-3 px-6">
-							KODE SUBUNIT
+							KODE RUANG
 						</th>
 						<th scope="col" class="py-3 px-6">
-							NAMA SUBUNIT
+							NAMA RUANG
 						</th>
 						<th scope="col" class="py-3 px-6">
 							KETERANGAN
@@ -35,22 +35,19 @@
 					</tr>
 				</thead>
 				<tbody>
-					@foreach($dataKlinik as $klinik)
+					@foreach($dataRuangan as $ruang)
 					<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
 						<th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-							{{ $klinik->kd_sub_unit }}
+							{{ $ruang->kd_sub_unit }}
 						</th>
 						<td class="py-4 px-6">
-							{{ $klinik->nama_sub_unit }}
+							{{ $ruang->nama_sub_unit }}
 						</td>
 						<td class="py-4 px-6">
-							{{ $klinik->keterangan }}
+							{{ $ruang->keterangan }}
 						</td>
 						<td class="py-4 px-6">
-							{{ $klinik->kd_poli_dpjp }}
-						</td>
-						<td class="py-4 px-6">
-							{!! statusAKtif($klinik->enabled) !!}
+							{!! statusAKtif($ruang->enabled) !!}
 						</td>
 						<td class="py-4 px-6 text-right">
 							<a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
