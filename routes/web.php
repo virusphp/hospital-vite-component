@@ -37,6 +37,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'p'], function () {
         Route::get('/kelasrawat', 'KelasrawatController@index')->name('kelasrawat');
         Route::get('/poliklinik', 'PoliklinikController@index')->name('poliklinik');
         Route::get('/ruangan', 'RuanganController@index')->name('ruangan');
+        Route::get('/kamar', 'KamarController@index')->name('kamar');
     });
 });
 
