@@ -7,7 +7,7 @@
 
 	<div class="container py-5 pt-5 mx-auto">
 		{{-- can use dinamic with database --}}
-		<div class="overflow-x-auto relative shadow-md sm:rounded-sm">
+		<div class="bg-white overflow-x-auto relative shadow-md sm:rounded-sm">
 			<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
 				<caption
 					class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800">
