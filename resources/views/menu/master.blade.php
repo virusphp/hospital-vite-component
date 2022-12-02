@@ -41,5 +41,12 @@
 			</x-slot>
 			{{ __('KAMAR') }}
 		</x-card-menu>
+
+		<x-card-menu link="{{ route('pegawai') }}">
+			<x-slot name="logo">
+				<x-logo-menu icon="{{ asset('images/icon-menu/logo.png') }}" />
+			</x-slot>
+			{{ __('PEGAWAI') }}
+		</x-card-menu>
 	</div>
 </x-app-layout>

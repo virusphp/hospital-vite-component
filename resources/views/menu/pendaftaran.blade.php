@@ -7,19 +7,19 @@
 
 	<div class="container grid lg:grid-cols-6 lg:gap-3 mx-auto px-8">
 		{{-- can use dinamic with database --}}
-		<x-card-menu>
+		<x-card-menu link="{{ route('ruangan') }}">
 			<x-slot name="logo">
 				<x-logo-menu icon="{{ asset('images/icon-menu/jalan.png') }}" />
 			</x-slot>
 			{{ __('RAWAT JALAN') }}
 		</x-card-menu>
-		<x-card-menu>
+		<x-card-menu link="{{ route('ruangan') }}">
 			<x-slot name="logo">
 				<x-logo-menu icon="{{ asset('images/icon-menu/igd.png') }}" />
 			</x-slot>
 			{{ __('RAWAT DARURAT') }}
 		</x-card-menu>
-		<x-card-menu>
+		<x-card-menu link="{{ route('ruangan') }}">
 			<x-slot name="logo">
 				<x-logo-menu icon="{{ asset('images/icon-menu/inap.png') }}" />
 			</x-slot>

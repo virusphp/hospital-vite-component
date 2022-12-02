@@ -22,4 +22,14 @@ class Subunit extends Model
     {
         return $query->where('kd_unit', '=', 2);
     }
+
+    public function scopePencarian($query, $search)
+    {
+        return $query->where(function ($query) use ($search) {
+            if ($search) {
+                $keywords = '%' . $search . '%';
+                $query->where('nama_sub_unit', 'like', $keywords);
+            }  
+        });
+    }
 }
